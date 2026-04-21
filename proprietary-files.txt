@@ -1,5 +1,4 @@
 # Unpinned blobs from agate_global-user 13 TP1A.220624.014 V14.0.6.0.TKWMIXM release-keys
-# agate: agate_global-user 14 UP1A.231005.007 V816.0.16.0.UKWMIXM release-keys
 # tecno: tecno-user 14 UP1A.231005.007 614108 release-keys
 
 # AEE
@@ -364,25 +363,18 @@ vendor/lib/libvpu.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
 
-# Media (C2) - from agate
-vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;SYMLINK=vendor/bin/hw/android.hardware.media.c2@1.2-mediatek|ba23175801971d7da8dcb632b45fc44da87e21ec|9cafcc92b89f94107707cd3135748e79424bb61d
-vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc|e09ad9455fc75875f6ccef32572bfc0894c98ab5
-vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy|2f5377909dbdab645c9e4fe0b52c4c5c823256a1
-vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy|7e75df111158f52a57e53afed252bd21ac1468d6
-vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml:vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml|9d6aa618b44ce23d3040f1f994692692458a9b7c|622d0480a3af7a162e37c56e0770213d8027000d
-vendor/lib64/libadpcmdec_mtk.so|8386405bf770d1ad7652f76f4f38e9c26285c88a
-vendor/lib64/libcodec2_mtk_c2store.so|1532f540228912668e13346fa53075fa46088731
-vendor/lib64/libcodec2_mtk_vdec.so|f673cb93ef300db88cd7040515e184e93028657f
-vendor/lib64/libcodec2_mtk_venc.so|ed970fcadfdbaf7bb0583ae6b38f79afacf1d103
-vendor/lib64/libcodec2_soft_mtk_alacdec.so|1976681d101435e24a3f731e639ec619b415c838
-vendor/lib64/libcodec2_soft_mtk_apedec.so|014f02489ac92039c482463f8cd0207aef45b385
-vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so|0ae5dd00ea7786fa6940e1f53c76c00c636eaea5
-vendor/lib64/libcodec2_soft_mtk_mp3dec.so|de0ff46aacb46846db35ba0ae198e61faf640ea5
-vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so|8490999b7d867ab6d924ca9de687cfeab9536def
-vendor/lib64/libcodec2_vpp_qt_plugin.so|e9b9f42fbad12d71a8590152649280f482bfea28
-vendor/lib64/libcodec2_vpp_rs_plugin.so|76c2396c4448f39d0c5d0a34b61c90b8fa118960
-vendor/lib64/libformatter.so|c45a83fc667b707ded7b4dc7c6fde819cf819647
-vendor/lib64/libmp3dec_mtk.so|ee66320ed4d137e705b3a1f79abc1c0c5d8364d4
+# Media (C2)
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;SYMLINK=vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
+vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
+vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
+vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml:vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
+vendor/lib64/libcodec2_mtk_c2store.so
+vendor/lib64/libcodec2_mtk_vdec.so
+vendor/lib64/libcodec2_mtk_venc.so
+vendor/lib64/libcodec2_vpp_qt_plugin.so
+vendor/lib64/libcodec2_vpp_rs_plugin.so
+vendor/lib64/libformatter.so
 
 # Mlipay
 vendor/bin/mlipayd_isee@1.1
