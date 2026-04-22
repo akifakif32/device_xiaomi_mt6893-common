@@ -116,6 +116,11 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so')
         .replace_needed('libui.so', 'libui-v34.so'),
 
+    'vendor/lib/libvcodec_oal.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+
     ('vendor/lib/libstagefright_soft_ac4dec.so',
      'vendor/lib/libstagefright_soft_ddpdec.so',
      'vendor/lib/libstagefrightdolby.so',
