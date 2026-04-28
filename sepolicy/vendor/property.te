@@ -1,3 +1,2 @@
 vendor_restricted_prop(vendor_fingerprint_prop)
-vendor_restricted_prop(vendor_mitee_prop)
 vendor_public_prop(vendor_mlipay_prop)

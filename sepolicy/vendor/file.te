@@ -14,9 +14,5 @@ type vendor_touchfeature_device, dev_type;
 # Triggers
 type vendor_gamekey_device, dev_type;
 
-# Trusted Execution Environment (TEE)
-type mitee_data_file, data_file_type, file_type;
-type proc_mitee_log, fs_type, proc_type;
-
 # Lights
 type sysfs_rgb_led, fs_type, sysfs_type;

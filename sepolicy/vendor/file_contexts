@@ -15,9 +15,6 @@
 /data/vendor/fpdump(/.*)?                                                                              u:object_r:fingerprint_vendor_data_file:s0
 /data/vendor/gf_data(/.*)?                                                                             u:object_r:fingerprint_vendor_data_file:s0
 
-# Keymaster
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.mitee                        u:object_r:hal_keymaster_default_exec:s0
-
 # Mfido
 /(vendor|system/vendor)/bin/fidoca_isee                                                                u:object_r:hal_mfidoca_default_exec:s0
 /(vendor|system/vendor)/bin/fidoca_mitee                                                               u:object_r:hal_mfidoca_default_exec:s0
@@ -41,13 +38,6 @@
 
 # Thermal
 /(vendor|system/vendor)/bin/mi_thermald                                                                u:object_r:vendor_mi_thermald_exec:s0
-
-# Trusted Execution Environment (TEE)
-/(vendor|system/vendor)/bin/tee-supplicant                                                             u:object_r:tee_exec:s0
-/(vendor|system/vendor)/bin/miteelog                                                                   u:object_r:tee_exec:s0
-/data/vendor/mitee(/.*)?                                                                               u:object_r:mitee_data_file:s0
-/dev/tee0                                                                                              u:object_r:teei_client_device:s0
-/dev/teepriv0                                                                                          u:object_r:teei_client_device:s0
 
 # Vibrator
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service                                u:object_r:hal_vibrator_default_exec:s0
