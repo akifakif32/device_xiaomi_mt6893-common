@@ -243,6 +243,7 @@ ro.surface_flinger.protected_contents=true
 ro.surface_flinger.supports_background_blur=1
 ro.surface_flinger.vsync_event_phase_offset_ns=8400000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=-10933333
+ro.surface_flinger.game_default_frame_rate_override=120
 
 # TEE
 ro.hardware.kmsetkey=beanpod
