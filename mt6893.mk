@@ -169,13 +169,15 @@ PRODUCT_PACKAGES += \
     Tag
 
 # Overlays
+$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayMT6893 \
     FrameworksResOverlayMT6893 \
     SettingsOverlayMT6893 \
-    SystemUIResOverlayMT6893 \
-    TetheringResOverlayMT6893 \
-    WifiResOverlayMT6893 \
+    SystemUIResOverlayMT6893
+
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -223,6 +225,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+# Platform
+TARGET_BOARD_PLATFORM := mt6893
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
@@ -239,6 +244,9 @@ $(call soong_config_set,power_libperfmgr,mode_extension_lib,//$(LOCAL_PATH):libp
 
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
+
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 
 # Rootdir
 PRODUCT_PACKAGES += \
