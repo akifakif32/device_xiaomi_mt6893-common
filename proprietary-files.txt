@@ -1,10 +1,6 @@
 # Unpinned blobs from agate_global-user 13 TP1A.220624.014 V14.0.6.0.TKWMIXM release-keys
 # tecno: tecno-user 14 UP1A.231005.007 614108 release-keys
 
-# AEE
-vendor/lib/libaedv.so
-vendor/lib64/libaedv.so
-
 # Audio
 vendor/lib/hw/audio.r_submix.mt6893.so
 vendor/lib/hw/sound_trigger.primary.default.so
@@ -245,10 +241,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
-
-# Display (Thread unwinding)
-vendor/lib/libladder.so
-vendor/lib64/libladder.so
 
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
