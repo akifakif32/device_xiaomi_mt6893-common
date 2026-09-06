@@ -289,6 +289,9 @@ PRODUCT_COPY_FILES += \
 # USB
 $(call soong_config_set_bool,android_hardware_mediatek_usb,audio_accessory_supported,true)
 
+# Use proprietary Xiaomi USB gadget init instead of common MediaTek one
+$(call soong_config_set_bool,mediatek_gadget,use_custom_usb_gadget_rc,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
