@@ -319,6 +319,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-wrapper \
     wpa_supplicant \
+    wlan_assistant
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
