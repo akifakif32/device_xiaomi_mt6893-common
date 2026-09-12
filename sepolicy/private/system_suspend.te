@@ -2,6 +2,3 @@
 allow system_suspend sysfs_wakeup:dir r_dir_perms;
 allow system_suspend sysfs_wakeup:file r_file_perms;
 allow system_suspend sysfs_wakeup:lnk_file r_file_perms;
-# Some wakeup source nodes under vendor charger/power_supply drivers
-# are not covered by the generic sysfs_wakeup genfscon mapping.
-allow system_suspend sysfs:file { open read getattr };

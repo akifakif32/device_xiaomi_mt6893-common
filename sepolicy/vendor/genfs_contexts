@@ -60,3 +60,9 @@ genfscon sysfs /devices/virtual/input/input3/wakeup                             
 
 # USB
 genfscon sysfs /devices/platform/rt-pd-manager/typec/port0                                       u:object_r:sysfs_usb_nonplat:s0
+
+# Wakeup (Xiaomi-specific charger/gauge chips not covered by common MTK genfs_contexts)
+genfscon sysfs /devices/platform/1101a000.i2c11/i2c-11/11-005b/power_supply/bq2597x-master/wakeup28    u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/1101a000.i2c11/i2c-11/11-0051/power_supply/bq2597x-slave/wakeup30     u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11cb1000.i2c9/i2c-9/9-0055/power_supply/bms/wakeup27                   u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11015000.i2c0/i2c-0/0-0035/power_supply/Charger_Identify/wakeup37     u:object_r:sysfs_wakeup:s0
