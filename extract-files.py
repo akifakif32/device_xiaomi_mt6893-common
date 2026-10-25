@@ -41,10 +41,11 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
 
-    ('vendor/bin/mnld', 'vendor/lib64/libaalservice.so'): blob_fixup()
+    ('vendor/lib64/libaalservice.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
 
-    'vendor/lib64/mt6893/libmnl.so': blob_fixup()
+    'vendor/lib64/libmnl_mtk.so': blob_fixup()
+        .fix_soname()
         .add_needed('libcutils.so'),
 
     ('vendor/lib/libteei_daemon_vfs.so', 'vendor/lib64/libteei_daemon_vfs.so'): blob_fixup()
@@ -143,6 +144,10 @@ blob_fixups: blob_fixups_user_type = {
      'vendor/lib64/libstagefrightdolby.so',
      'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
+    
+    'vendor/bin/mnld': blob_fixup()
+        .replace_needed('libmnl.so', 'libmnl_mtk.so')
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
 
 }  # fmt: skip
 
