@@ -362,7 +362,7 @@ vendor/lib64/libcodec2_soft_common.so:vendor/lib64/libcodec2_soft_common-v31.so;
 vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk-v31.so;FIX_SONAME
 vendor/lib64/libcodec2_vpp_qt_plugin.so|e9b9f42fbad12d71a8590152649280f482bfea28|93ba6dfa246326355420f7e58680fb39273722d9
 vendor/lib64/libcodec2_vpp_rs_plugin.so|76c2396c4448f39d0c5d0a34b61c90b8fa118960|150c8539675aa433e60a5a1c734c32bda60fe1e9
-vendor/lib64/libformatter.so
+vendor/lib64/libformatter.so:vendor/lib64/libformatter_mtk.so;FIX_SONAME
 vendor/lib64/libsfplugin_ccodec_utils.so:vendor/lib64/libsfplugin_ccodec_utils-v31.so;FIX_SONAME
 vendor/lib64/libcodec2_soft_mtk_mp3dec.so
 vendor/lib64/libcodec2_soft_mtk_alacdec.so

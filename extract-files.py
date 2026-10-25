@@ -99,8 +99,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
 
     ('vendor/lib64/libcodec2_mtk_c2store.so',
-     'vendor/lib64/libcodec2_mtk_vdec.so',
-     'vendor/lib64/libcodec2_mtk_venc.so',
      'vendor/lib64/libcodec2_vpp_qt_plugin.so',
      'vendor/lib64/libcodec2_vpp_rs_plugin.so'): blob_fixup()
         .replace_needed('libcodec2_soft_common.so', 'libcodec2_soft_common-v31.so')
@@ -148,6 +146,14 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/mnld': blob_fixup()
         .replace_needed('libmnl.so', 'libmnl_mtk.so')
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
+        
+    ('vendor/lib64/libcodec2_mtk_vdec.so', 'vendor/lib64/libcodec2_mtk_venc.so'): blob_fixup()
+        .replace_needed('libcodec2_soft_common.so', 'libcodec2_soft_common-v31.so')
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v31.so')
+        .replace_needed('libsfplugin_ccodec_utils.so', 'libsfplugin_ccodec_utils-v31.so')
+        .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so')
+        .replace_needed('libui.so', 'libui-v34.so'),
+        .replace_needed('libformatter.so', 'libformatter_mtk.so'),
 
 }  # fmt: skip
 
