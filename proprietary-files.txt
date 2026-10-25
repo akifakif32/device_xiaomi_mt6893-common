@@ -162,10 +162,6 @@ vendor/lib64/libbt-vendor.so
 # Bluetooth (firmware) - from tecno
 vendor/firmware/soc3_0_ram_bt_1a_1_hdr.bin|30cd0245d7a5ed072f25dc4e63bb732425e936a0
 
-# Bluetooth (A2DP)
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-
 # Camera
 vendor/lib/libbwc.so
 vendor/lib64/libbwc.so
