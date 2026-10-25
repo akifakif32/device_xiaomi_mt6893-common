@@ -23,6 +23,8 @@ endif
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+$(call soong_config_set,update_engine,map_vabc_in_recovery,true)
+
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
     android.hardware.boot-service.default_recovery
