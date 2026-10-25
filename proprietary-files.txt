@@ -537,8 +537,6 @@ vendor/lib64/libtrm.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 # Radio (IMS)
 vendor/bin/hw/vtservice_hidl
@@ -571,7 +569,6 @@ vendor/etc/init/netdagent.rc
 vendor/etc/init/tetheroffloadservice.rc
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Thermal
 vendor/bin/thermal
