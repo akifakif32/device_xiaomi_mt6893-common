@@ -284,6 +284,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
     hardware/mediatek/libaedv \
+    hardware/mediatek/libion_mtk \
     hardware/xiaomi
 
 # Shipping API level

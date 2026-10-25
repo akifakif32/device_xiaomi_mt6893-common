@@ -336,8 +336,6 @@ vendor/lib/AVCSecureVdecCA.so
 vendor/lib/HEVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libAVCSecureVencCA.so
-vendor/lib/libion_mtk.so
-vendor/lib/libion_ulit.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility.so
 vendor/lib/libvcodecdrv.so
@@ -431,8 +429,6 @@ vendor/lib64/libarmnn.so
 vendor/lib64/libarmnn_ndk.mtk.vndk.so
 vendor/lib64/libcmdl.so
 vendor/lib64/libcmdl_ndk.mtk.vndk.so
-vendor/lib64/libion_mtk.so
-vendor/lib64/libion_ulit.so
 vendor/lib64/libmmagent.so
 vendor/lib64/libneuron_adapter.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
