@@ -16,9 +16,6 @@ vendor.usbsph.dl.pcm.dump=0
 vendor.usbsph.srcaws.pcm.dump=0
 vendor.usbsph.ul.pcm.dump=0
 
-# Audio (Dolby)
-ro.vendor.audio.dolby.dax.support=true
-
 # APK Verity
 ro.apk_verity.mode=2
 
