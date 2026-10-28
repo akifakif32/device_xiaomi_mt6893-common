@@ -32,6 +32,7 @@
 
 # Sensors
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal                     u:object_r:hal_sensors_default_exec:s0
+/dev/elliptic[0-9]*                                                                                    u:object_r:vendor_elliptic_device:s0
 
 # Triggers
 /dev/gamekey                                                                                           u:object_r:vendor_gamekey_device:s0
