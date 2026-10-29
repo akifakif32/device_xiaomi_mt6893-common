@@ -184,8 +184,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayMT6893 \
     FrameworksResOverlayMT6893 \
     SettingsOverlayMT6893 \
-    SystemUIResOverlayMT6893 \
-    ApertureOverlay
+    SystemUIResOverlayMT6893
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
