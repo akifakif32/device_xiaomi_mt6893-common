@@ -1,0 +1,2 @@
+# 4.14 labels memfd files as tmpfs, let crash_dump use them or it cannot parse the maps and no tombstone is written
+allow crash_dump tmpfs:file rw_file_perms;
