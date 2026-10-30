@@ -39,3 +39,5 @@
 
 # Thermal
 /(vendor|system/vendor)/bin/mi_thermald                                                                u:object_r:vendor_mi_thermald_exec:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/mitee(_[ab])?    u:object_r:mitee_block_device:s0
+/dev/block/by-name/mitee(_[ab])?    u:object_r:mitee_block_device:s0

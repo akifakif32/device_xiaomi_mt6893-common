@@ -19,3 +19,4 @@ type vendor_gamekey_device, dev_type;
 
 # Lights
 type sysfs_rgb_led, fs_type, sysfs_type;
+type mitee_block_device, dev_type;
