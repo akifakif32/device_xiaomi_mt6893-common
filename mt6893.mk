@@ -337,3 +337,7 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/mt6893-common/mt6893-common-vendor.mk)
+
+# Mali
+PRODUCT_PACKAGES += \
+    libgpud_shim

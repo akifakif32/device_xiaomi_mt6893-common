@@ -187,11 +187,9 @@ vendor/lib64/egl/libMEOW_data.so
 vendor/lib64/egl/libMEOW_gift.so
 vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
-vendor/lib64/egl/mt6893/libGLES_mali.so;SYMLINK=vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/hw/hwcomposer.mt6893.so
 vendor/lib64/hw/mt6893/android.hardware.graphics.allocator@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/mt6893/android.hardware.graphics.mapper@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib64/hw/mt6893/vulkan.mali.so;SYMLINK=vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
@@ -207,7 +205,6 @@ vendor/lib64/libdre.so
 vendor/lib64/libgamehdr.so
 vendor/lib64/libged.so
 vendor/lib64/libgpu_aux.so
-vendor/lib64/libgpud.so
 vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
@@ -237,6 +234,25 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
+
+# Display (Mali) - from lyriq_g-user 15 V1TLS35.73-60-3-16
+vendor/etc/gralloc/cam.xml|38d3140fb1c1faecaffb30bcd2e2c28177bf8ab9
+vendor/etc/gralloc/dpu.xml|96bc2fa0aff5b838f5ff0780de03dffaf2d2187d
+vendor/etc/gralloc/dpu_aeu.xml|e8d574f08b52281c3186591771d423fbdec0e0d6
+vendor/etc/gralloc/gpu.xml|7bb49923b6773c75c906736d9f528c4c9aa48f74
+vendor/etc/gralloc/vpu.xml|85f81eee3f887a98d404e805d31f9dae7e8affdc
+vendor/etc/mali_platform.config|195cd5817f23a3a013c23ed2cecf0b01ae48a42a
+vendor/lib64/egl/mt6893/libGLES_mali.so;SYMLINK=vendor/lib64/egl/libGLES_mali.so|cbd71e841f6196eace7138c76fa8a3a950ef94bd|f8d60322fbeef907eaf670e346341001bb702fc0
+vendor/lib64/hw/mt6893/vulkan.mali.so;SYMLINK=vendor/lib64/hw/vulkan.mali.so|6a23d68e967b7584245b4b51e50bc342733fe8bb
+vendor/lib64/libgpud.so|e63bf16aed3d6df02a907415ed45be23dd226e86
+vendor/lib64/mt6893/arm.graphics-V5-ndk.so;SYMLINK=vendor/lib64/arm.graphics-V5-ndk.so|f286ba9e64da6a96e13c6f9dc5deed5e9c7f56cb
+vendor/lib64/mt6893/libarm_egl_properties_sysprop.so;SYMLINK=vendor/lib64/libarm_egl_properties_sysprop.so|260cb14856e9e1e19cd707088373947e8bd37b32
+vendor/lib64/mt6893/libarm_gralloc_properties_sysprop.so;SYMLINK=vendor/lib64/libarm_gralloc_properties_sysprop.so|fb17db02afd034c6b08dfa4b18463559de6deb65
+vendor/lib64/mt6893/libarm_mali_config_sysprops.so;SYMLINK=vendor/lib64/libarm_mali_config_sysprops.so|48a5d794603ac52616763d26c211a6019fc1e0a0
+
+# Display (Mali) - stock r32p1, OpenCL only
+vendor/lib64/egl/mt6893/libGLES_mali.so:vendor/lib64/egl/libGLESr32p1.so;FIX_SONAME|f658457ff937bbe57a1515ccea7681437451ee0a|13a0c98939de628ee013970c8032ae63e51160cf
+vendor/lib64/libgpud.so:vendor/lib64/libgpud_stock.so;FIX_SONAME|94f740ca3419457b830429b079059bab9195a9ad|d1b84b9bf91ba8411741f7a41bfd3caa248f9815
 
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
@@ -417,7 +433,7 @@ vendor/lib64/APUWareApusysServer.so
 vendor/lib64/APUWareHmpServer.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer_v2.so
-vendor/lib64/libOpenCL.so
+vendor/lib64/libOpenCL.so|e8814e2bafc5afb9d8d52a6db38f16ed892cdd31|382d616cc402e2e249d0b7c645307d8df082f45b
 vendor/lib64/libaiselector_cust.so
 vendor/lib64/libapu_mdw.so
 vendor/lib64/libapu_mdw_batch.so

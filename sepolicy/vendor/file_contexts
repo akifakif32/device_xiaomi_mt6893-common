@@ -41,3 +41,10 @@
 /(vendor|system/vendor)/bin/mi_thermald                                                                u:object_r:vendor_mi_thermald_exec:s0
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/mitee(_[ab])?    u:object_r:mitee_block_device:s0
 /dev/block/by-name/mitee(_[ab])?    u:object_r:mitee_block_device:s0
+
+# Mali
+/(vendor|system/vendor)/lib64/libgpud_shim\.so     u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib64/libgpud_stock\.so     u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib64/egl/libGLESr32p1\.so     u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib64/arm\.graphics-V5-ndk\.so     u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib64/libarm_(egl_properties|gralloc_properties|mali_config)_sysprop(s)?\.so     u:object_r:same_process_hal_file:s0

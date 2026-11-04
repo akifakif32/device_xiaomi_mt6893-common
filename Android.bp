@@ -5,3 +5,13 @@
 
 soong_namespace {
 }
+
+cc_library_shared {
+    name: "libgpud_shim",
+    vendor: true,
+    srcs: ["shims/gpud_shim.c"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}
