@@ -15,3 +15,22 @@ cc_library_shared {
         "-Werror",
     ],
 }
+
+// The camera libraries ship OpenCL kernels precompiled for the old r32p1 driver.
+// This ICD front-end converts them for the r49p1 driver while loading them and
+// forwards everything else to the stock ICD loader (libOpenCL_real.so).
+cc_library_shared {
+    name: "libOpenCL",
+    vendor: true,
+    srcs: [
+        "shims/opencl/opencl_shim.c",
+        "shims/opencl/stubs.S",
+    ],
+    shared_libs: ["liblog"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wno-unused-parameter",
+        "-mno-outline-atomics",
+    ],
+}

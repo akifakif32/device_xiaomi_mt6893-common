@@ -44,7 +44,6 @@
 
 # Mali
 /(vendor|system/vendor)/lib64/libgpud_shim\.so     u:object_r:same_process_hal_file:s0
-/(vendor|system/vendor)/lib64/libgpud_stock\.so     u:object_r:same_process_hal_file:s0
-/(vendor|system/vendor)/lib64/egl/libGLESr32p1\.so     u:object_r:same_process_hal_file:s0
+/(vendor|system/vendor)/lib64/libOpenCL_real\.so     u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib64/arm\.graphics-V5-ndk\.so     u:object_r:same_process_hal_file:s0
 /(vendor|system/vendor)/lib64/libarm_(egl_properties|gralloc_properties|mali_config)_sysprop(s)?\.so     u:object_r:same_process_hal_file:s0
