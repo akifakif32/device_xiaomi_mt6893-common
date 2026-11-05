@@ -22,6 +22,7 @@ cc_library_shared {
 cc_library_shared {
     name: "libOpenCL",
     vendor: true,
+    compile_multilib: "64",
     srcs: [
         "shims/opencl/opencl_shim.c",
         "shims/opencl/stubs.S",
