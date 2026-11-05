@@ -251,7 +251,7 @@ vendor/lib64/mt6893/libarm_gralloc_properties_sysprop.so;SYMLINK=vendor/lib64/li
 vendor/lib64/mt6893/libarm_mali_config_sysprops.so;SYMLINK=vendor/lib64/libarm_mali_config_sysprops.so|48a5d794603ac52616763d26c211a6019fc1e0a0
 
 # Display (Mali) - stock OpenCL ICD loader, behind the libOpenCL shim
-vendor/lib64/libOpenCL.so:vendor/lib64/libOpenCL_real.so;FIX_SONAME|e8814e2bafc5afb9d8d52a6db38f16ed892cdd31|a488bd4dd280f4593d4c90a4eeaa0a1666d3a189
+vendor/lib64/libOpenCL.so:vendor/lib64/libOpenCL_real.so;FIX_SONAME|e8814e2bafc5afb9d8d52a6db38f16ed892cdd31|4b297b5b2ea2c9da77aa25769876548172c3524a
 
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
