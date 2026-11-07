@@ -241,7 +241,7 @@ vendor/etc/gralloc/dpu.xml|96bc2fa0aff5b838f5ff0780de03dffaf2d2187d
 vendor/etc/gralloc/dpu_aeu.xml|e8d574f08b52281c3186591771d423fbdec0e0d6
 vendor/etc/gralloc/gpu.xml|7bb49923b6773c75c906736d9f528c4c9aa48f74
 vendor/etc/gralloc/vpu.xml|85f81eee3f887a98d404e805d31f9dae7e8affdc
-vendor/etc/mali_platform.config|195cd5817f23a3a013c23ed2cecf0b01ae48a42a
+vendor/etc/mali_platform.config|ee54bd418a2b6cf0fc9a5be1f0ebab3573dca2ca
 vendor/lib64/egl/mt6893/libGLES_mali.so;SYMLINK=vendor/lib64/egl/libGLES_mali.so|cbd71e841f6196eace7138c76fa8a3a950ef94bd|f8d60322fbeef907eaf670e346341001bb702fc0
 vendor/lib64/hw/mt6893/vulkan.mali.so;SYMLINK=vendor/lib64/hw/vulkan.mali.so|6a23d68e967b7584245b4b51e50bc342733fe8bb
 vendor/lib64/libgpud.so|e63bf16aed3d6df02a907415ed45be23dd226e86
