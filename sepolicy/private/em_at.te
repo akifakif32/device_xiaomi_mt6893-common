@@ -1,0 +1,16 @@
+# em_at --iran: one-time IMS configuration of the modem for Iranian SIMs,
+# sent through the mtkradioex HAL the same way EngineerMode does.
+type em_at, domain, coredomain;
+type em_at_exec, system_file_type, exec_type, file_type;
+
+# Marks that an Iranian SIM was seen / a slot was configured.
+type em_at_prop, property_type, system_internal_prop;
+
+init_daemon_domain(em_at)
+hwbinder_use(em_at)
+hal_client_domain(em_at, hal_telephony)
+
+# gsm.sim.operator.numeric
+get_prop(em_at, radio_prop)
+set_prop(em_at, em_at_prop)
+get_prop(em_at, em_at_prop)

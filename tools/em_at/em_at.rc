@@ -1,0 +1,19 @@
+# Iranian networks (MCC 432) need a one-time IMS configuration on the modem
+# (the "CMW500 setting" of EngineerMode's IMS page) and ViLTE switched off.
+# Everything below is keyed on the SIM operator, other networks are untouched.
+
+service em_at_iran /system_ext/bin/em_at --iran
+    class late_start
+    user radio
+    group radio
+    oneshot
+    disabled
+
+on property:gsm.sim.operator.numeric=*
+    start em_at_iran
+
+# Set by em_at as soon as it sees an Iranian SIM. Persistent, so it also
+# holds after a reboot.
+on property:persist.sys.em_at.iran_sim=1
+    setprop persist.vendor.mtk.vilte.enable 0
+    setprop persist.vendor.vilte_support 0

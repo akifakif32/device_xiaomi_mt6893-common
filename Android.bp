@@ -4,6 +4,9 @@
 //
 
 soong_namespace {
+    imports: [
+        "hardware/mediatek",
+    ],
 }
 
 cc_library_shared {
@@ -33,5 +36,25 @@ cc_library_shared {
         "-Werror",
         "-Wno-unused-parameter",
         "-mno-outline-atomics",
+    ],
+}
+
+// Sends AT commands through the mtkradioex HAL (like EngineerMode does).
+// `em_at --iran` configures the modem's IMS profile for Iranian SIMs once.
+cc_binary {
+    name: "em_at",
+    system_ext_specific: true,
+    srcs: ["tools/em_at/em_at.cpp"],
+    init_rc: ["tools/em_at/em_at.rc"],
+    shared_libs: [
+        "libbase",
+        "libhidlbase",
+        "libutils",
+        "liblog",
+        "vendor.mediatek.hardware.mtkradioex@3.0",
+    ],
+    cflags: [
+        "-Wall",
+        "-Werror",
     ],
 }
