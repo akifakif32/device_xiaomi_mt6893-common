@@ -13,6 +13,10 @@ cc_library_shared {
     name: "libgpud_shim",
     vendor: true,
     srcs: ["shims/gpud_shim.c"],
+    shared_libs: [
+        "liblog",
+        "libnativewindow",
+    ],
     cflags: [
         "-Wall",
         "-Werror",
